@@ -1,0 +1,19 @@
+{
+  "name": "employee",
+  "version": "1.0.0",
+  "description": "employee-crud-op",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "author": "Devesh Vyas",
+  "license": "ISC",
+  "dependencies": {
+        "body-parser": "^1.17.1",
+        "cors": "^2.8.3",
+        "express": "^4.15.3",
+        "mysql": "^2.13.0",
+        "winston": "^2.3.1",
+        "winston-daily-rotate-file": "^1.4.6"
+    }
+}

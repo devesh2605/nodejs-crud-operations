@@ -1,0 +1,82 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Employee",
+		"_postman_id": "403c765f-7751-ce1b-b9ab-148c60ecb686",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/employee/insert",
+			"request": {
+				"url": "localhost:3000/employee/insert",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"first_name\": \"Devesh\",\n\t\"last_name\": \"Vyas\",\n\t\"age\":25\n}"
+				},
+				"description": "API For inserting employee data"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/employee/update",
+			"request": {
+				"url": "localhost:3000/employee/update",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"eid\": 1,\n\t\"first_name\": \"Devesh\",\n\t\"last_name\": \"Vyas\",\n\t\"age\":22\n}"
+				},
+				"description": "API to update employee Data"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/employee",
+			"request": {
+				"url": "localhost:3000/employee",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "API to fetch employee data"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/employee/delete",
+			"request": {
+				"url": "localhost:3000/employee/delete",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"eid\": 1\n}"
+				},
+				"description": "API to delete employee data"
+			},
+			"response": []
+		}
+	]
+}
